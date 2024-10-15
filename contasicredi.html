@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de taxa a cobrar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/564x/b5/1c/25/b51c25534c4e00e5f25b3ab5528bc993.jpg" alt="Imagem">
+        <h2>Formulário de taxa</h2>
+        <table>
+            <tr>
+                <td>Valor:</td>
+                <td><input type="number" id="valor"></td>
+            </tr>
+            <tr>
+                <td>Forma de Pagamento:</td>
+                <td>
+                    <select id="forma-pagamento">
+                        <option value="debito">Débito</option>
+                        <option value="credito-avista">Crédito 1x</option>
+                        <option value="credito-2x">Crédito 2x</option>
+                        <option value="credito-3x">Crédito 3x</option>
+                        <option value="credito-4x">Crédito 4x</option>
+                        <option value="credito-5x">Crédito 5x</option>
+                        <option value="credito-6x">Crédito 6x</option>
+                        <option value="credito-7x">Crédito 7x</option>
+                        <option value="credito-8x">Crédito 8x</option>
+                        <option value="credito-9x">Crédito 9x</option>
+                        <option value="credito-10x">Crédito 10x</option>
+                        <option value="credito-11x">Crédito 11x</option>
+                        <option value="credito-12x">Crédito 12x</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bandeira do Cartão:</td>
+                <td>
+                    <select id="bandeira-cartao">
+                        <option value="mastercard">Mastercard</option>
+                        <option value="visa">Visa</option>
+                        <option value="elo">Elo</option>
+                        <option value="amex">Amex</option>
+                        <option value="hipercard">Hipercard</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button onclick="exibirResultado()">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
